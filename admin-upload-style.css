@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#add_product{
+    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
+    gap:20px;
+    
+}
+#add_product input,select{
+    box-shadow: 5px 5px 5px -3px #32aeb1;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 50px;
+}
+#add_product_btn{
+    background-color: #32aeb1;
+    color:white;
+    border:none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#add_product_btn:active{
+    transform: translateY(5px);
+}
