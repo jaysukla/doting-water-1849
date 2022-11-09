@@ -1,3 +1,4 @@
+
 const navbar=()=>{
     return ` <div class="part1">
     <div class="logo"><img src="logofinal.png" alt="logo"></div>
@@ -58,4 +59,5 @@ const navbar=()=>{
           </div></div>
 </div>`;
 };
+
 export { navbar};
