@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin-upload-style.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+<div id="navbar">
+
+</div>
+
+
+    <div class="main">
+        <div id="add_product">
+            <input type="text" id="id" placeholder="Enter Product Id ">
+            <input type="text" id="name" placeholder="Enter Product Name">
+            <input type="url" id="image" placeholder="Enter Product-Image Url">
+            <input type="text" id="description" placeholder="Add Product Descreption">
+            <select id="category">
+                <option value="Wellness">Wellness</option>
+                <option value="Limited">Limited</option>
+                <option value="Ayurveda">Ayurveda</option>
+                  </select>
+            <input type="number" id="price" placeholder="Enter Product Price">
+            <button id="add_product_btn">Add product</button>
+        </div>
+        <div>
+            <img style="box-shadow: 10px 10px 20px -3px #32aeb1;" src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png" alt="backgroundimg">
+        </div>
+
+    
+
+    </div>
+<!-- Delete the product  -->
+<div id="bin">
+<h3>Delete Product</h3>
+    <input  type="text" name="" id="Delete_id" placeholder="Entre product id" ><br>
+    <select id="type">
+        <option value="Wellness">Wellness</option>
+        <option value="Limited">Limited</option>
+        <option value="Ayurveda">Ayurveda</option>
+          </select> <br>
+    <button id="remove"> remove</button>
+    </div>
+    
+<!-- update the price  -->
+
+<div id="update">
+    <h3>Update Price</h3>
+    <input  type="text" name="" id="update_id" placeholder="Entre product id" ><br>
+    <select id="update_in">
+        <option value="Wellness">Wellness</option>
+        <option value="Limited">Limited</option>
+        <option value="Ayurveda">Ayurveda</option>
+          </select> <br>
+<input type=number name="" id="new_price"><br>
+
+<button id="update_btn">update</button>
+
+</div>
+
+
+</body>
+<script type="module" src="Admin-upload.js"></script>
+</html>
