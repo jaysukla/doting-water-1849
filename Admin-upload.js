@@ -1,5 +1,10 @@
-//adding event listner to button 
+//import navbar
+import {navbar} from './components/navbar.js'
 
+let navbar_div=document.getElementById("navbar");
+navbar_div.innerHTML=navbar();
+
+//adding event listner to button 
 let create_btn=document.getElementById("add_product_btn");
 create_btn.onclick= ()=>{
    //onclicking the function will redirect to createProduct on line 10
