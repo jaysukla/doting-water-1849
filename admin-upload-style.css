@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#add_product{
+    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
+    gap:20px;
+    
+}
+#add_product input,select{
+    box-shadow: 5px 5px 5px -3px #32aeb1;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 5px;
+}
+#add_product_btn{
+    background-color: #32aeb1;
+    color:white;
+    border:none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#add_product_btn:active{
+    transform: translateY(5px);
+}
+input{
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(67, 66, 66);
+}
+
+#Delete_id{
+    height: 35px;
+
+  border: 1px solid black;
+  
+}
+#remove{
+    background-color: #32aeb1;
+    color:white;
+    height: 35px ;
+    width: 80px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+margin-left: 100px
+;
+margin-top: 5px;
+
+}
+#bin{
+    margin-left: 150px;
+    align-items: center;
+}
+#type{
+    margin-left: 0px;
+    height: 30px;
+    margin-top: 5px;
+    width: 300px;
+}
+#update{
+    margin-left: 150px;
+    align-items: center; 
+    margin-top: 50px; 
+}
+#update>input{
+    height: 35px;
+margin-top: 5px;
+    border: 1px solid black;
+}
+#update_in{
+    margin-left: 0px;
+    height: 30px;
+    margin-top: 5px;
+    width: 300px;  
+}
+#update_btn{
+    background-color: #32aeb1;
+    color:white;
+    height: 35px ;
+    width: 80px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+margin-left: 100px
+;
+margin-top: 5px;
+}
+
+
+
+
