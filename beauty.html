@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <style>
+        body{
+            background-color: #f3f3f3;
+            font-family: lato;
+        }
+        #featured_brand{
+            width: 95%;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: auto;
+            text-align: center;
+            gap: 15px;
+            margin:auto ;
+        }
+        #featured_brand div{
+            border-radius: 7px;
+            background-color: white;
+        }
+        #featured_brand div img{
+            width: 80%;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="carousel"></div>
+    <h1 id="spotlight">In the Spotlight</h1>
+    <div id="spotlight_img">
+        <img src="https://www.netmeds.com/images/cms/section/images/1667367314_Winter-Skincare-Sale.jpg" alt="Erroe">
+    </div>
+    <h1 d="featured">Featured Brands</h1>
+    <div id="featured_brand">
+        <div> 
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/maybelline.jpg" alt="Error">
+            <p>Maybelline</p>
+        </div>
+        <div>
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/garnier.jpg" alt="Error">
+            <p>Garnier</p>
+        </div>
+        <div>
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/myglamm.jpg" alt="Error">
+            <p>Myglamm</p>
+        </div>
+        <div>
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/colorbar.jpg" alt="Error">
+            <p>Colorbar</p>
+        </div>
+        <div>
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/plum.jpg" alt="Error">
+            <p>Plum</p>
+        </div>
+    </div>
+    
+</body>
+<script type="module" src="./beauty.js"></script>
+</html>

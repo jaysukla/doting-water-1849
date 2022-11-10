@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <style>
+        body{
+            background-color: #f3f3f3;
+            font-family: lato;
+        }
+
+        #carousel > img{
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+        #Categories_heading{
+            margin-left: 2%;
+        }
+        #categories{
+            width: 95%;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: auto;
+            text-align: center;
+            gap: 15px;
+            margin:auto ;
+        }
+        #categories div{
+            /* box-shadow: ; */
+            /* border: 1px solid red; */
+            border-radius: 7px;
+            background-color: white;
+        }
+        #categories div img{
+
+            width: 80%;
+            border-radius: 7px;
+        }
+        #concerns{
+            display: flex;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="carousel"></div>
+    <h1 id="Categories_heading">Popular Categories</h1>
+    <div id="categories">
+        <div> 
+            <img src="https://www.netmeds.com/images/category/v1/3902/thumb/face_personal_care.jpg" alt="Error">
+            <p>Face Personal Care</p>
+        </div>
+        <div>
+            <img src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_1.jpg" alt="Error">
+            <p>Body Care</p>
+        </div>
+        <div>
+            <img src="https://www.netmeds.com/images/category/v1/547/thumb/hair_care_2.jpg" alt="Error">
+            <p>Hair Care</p>
+        </div>
+        <div>
+            <img src="https://www.netmeds.com/images/category/v1/562/thumb/oral_care.jpg" alt="Error">
+            <p>Oral Care</p>
+        </div>
+        <div>
+            <img src="https://www.netmeds.com/images/category/v1/3772/thumb/home_health.jpg" alt="Error">
+            <p>Home & Health</p>
+        </div>
+    </div>
+    <div id="under">
+        <p>Under 399</p>
+    </div>
+    <div id="upto">
+        <p>UPTO 65% OFF</p>
+    </div>
+    <div id="emami">
+        <p>Emami</p>
+    </div>
+    <div id="Aroma_Magic">
+        <p>Aroma Magic</p>
+    </div>
+    <h1 id="health">Health Concerns</h1>
+    <div id="concerns">
+        <div>
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/lung-care.jpg?v=1" alt="Error">
+            <p>Lung Care</p>
+        </div>
+        <div>
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/weight-care.jpg?v=1" alt="Error">
+            <p>Weight Care</p>
+        </div>
+        <div>
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/women-s-care.jpg?v=1" alt="Error">
+            <p>Women's Care</p>
+        </div>
+        <div>
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/bone-and-joint-pain.jpg?v=1" alt="Error">
+            <p>Bone And Joint Pain</p>
+        </div>
+        <div>
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/cold-and-fever.jpg?v=1" alt="Error">
+            <p>Cold And Fever</p>
+        </div>
+    </div>
+</body>
+<script type="module" src="./wellnesh.js"></script>
+</html>
