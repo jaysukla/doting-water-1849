@@ -1,63 +1,80 @@
 
 const navbar=()=>{
-    return ` <div class="part1">
-    <div class="logo"><img src="logofinal.png" alt="logo"></div>
-    <div class="input"><input type="text" id="search" placeholder="Search for medecine and wellness products..."></div>
-    <div class="admin"><i class="fa fa-user-plus" style="font-size:27px"></i><a href="Admin-upload.html">Admin-upload</a></div>
-    <div class="cart"><i class="fa fa-shopping-cart" style="font-size:27px"></i><a href="cart.html">Cart</a></div>
-    <div class="signup"><i class="fa fa-user-circle-o" style="font-size:27px"></i><a href="/">Sign in/Sign up</a></div>
-</div>
-<div class="part2">
-    <div class="one"> <a href="/"><img src="https://www.netmeds.com/assets/version1667495847/gloryweb/images/icons/medicine.svg" alt=""></a>
-        <div class="dropdown">
-            <button class="dropbtn">Medicine</button>
-            <div class="dropdown-content">
-              <a href="#">All Medicine</a>
-              <a href="#">Previously Ordered Products</a>
-              
-            </div>
-          </div>
+    return `  <div>
+    <div>
+        <img src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg">
     </div>
- 
-    <div class="one"> <a href="/"><img src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg" alt=""> </a><div class="dropdown">
-        <button class="dropbtn">Wellness</button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div></div>
-    
-    <div class="one"> <a href="/"><img src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg" alt=""></a>
-        <div class="dropdown">
-            <button class="dropbtn">Lab Test</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+        <div id="searchbar">
+            <div id="search_option">
+                <p>Deliver to <b>110002</b></p>
             </div>
-          </div></div>
-   
-    <div class="one"> <a href="/"><img src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg" alt=""></a><div class="dropdown">
-        <button class="dropbtn">Beauty</button>
-        <div class="dropdown-content">
-          <a href="#">Personal care</a>
-          <a href="#">Make-Up</a>
-          <a href="#">Skin Care</a>
-          <a href="#">Hair</a>
-        </div>
-      </div></div>
-
-    <div class="one"> <a href="/"><img src="https://www.netmeds.com/assets/version1667495847/gloryweb/images/icons/health-library.svg" alt=""></a>
-        <div class="dropdown">
-            <button class="dropbtn">Health Corner</button>
-            <div class="dropdown-content">
-              <a href="#">Health-Library</a>
-              <a href="#">PatientsAlike</a>
-              <a href="#">Cancer Awareness</a>
+            <input  type="text" placeholder="search for medicine & wellness products.."></div>
+        <div>
+            <div>
+                <i class="fa-solid fa-circle-arrow-up"></i>
+             <a style="text-decoration:none; color: aliceblue;"  href="./Admin-upload.html">Upload</a>
             </div>
-          </div></div>
-</div>`;
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Cart</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-id-card"></i>
+                <p>Sign in/Sign up</p>
+            </div>
+        </div>
+     </div>
+     <div>
+        <div class="right_menu">
+            <div class="dept">
+                <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/Wellnessnew.svg"></div>
+                <p>Medicine</p>
+            </div>
+          <div class="dropdown_menu">
+            <p>All Products</p>
+            <p>Previously Ordered Products</p>
+          </div>
+        </div>
+        <div>
+            <div class="dept">
+                <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/ordermedicinnew.svg"></div>
+                <p>Wellness</p>
+            </div>
+        </div>
+        <div>
+            <div  class="dept">
+                <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/Wellnessnew.svg"></div>
+                <p>Lab Tests</p>
+            </div>
+        </div>
+        <div class="right_menu">
+            <div  class="dept">
+                <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg"></div>
+                <p>Beauty</p>
+            </div>
+            <div class="dropdown_menu">
+                <p>Personal Care</p>
+                <p>Make-Up</p>
+                <p>Hair</p>
+                <p>Skin Care</p>
+                <p>Tools & Appliances</p>
+                <p> Mom & Baby</p>
+                <p>Fragrances</p>
+                <p>Mens's Grooming</p>
+              </div>
+        </div>
+        <div class="right_menu">
+            <div  class="dept">
+                <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/ordermedicinnew.svg"></div>
+                <p>Health Corner</p>
+            </div>
+            <div class="dropdown_menu">
+                <p>Health Library</p>
+                <p>Patient Alike</p>
+                <p>Cancer Awareness</p>
+              </div>
+        </div>
+    </div> `;
 };
 
 export { navbar};
