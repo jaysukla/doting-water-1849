@@ -1,4 +1,5 @@
 
+
    
         let image=document.createElement("img");
         let slideShow=document.getElementById("slider");
@@ -152,3 +153,5 @@ localStorage.setItem("cart",JSON.stringify(arr))
 
 
 }
+
+
