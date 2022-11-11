@@ -1,8 +1,8 @@
 
 
-// import {navbar} from "./navbar.js"
+import {navbar} from "./navbar.js"
 
-// document.querySelector("#navbar").innerHTML=navbar()
+document.querySelector("#navbar").innerHTML=navbar()
 
 
 
