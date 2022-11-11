@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./navbar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./wellnesh.css">
     
     <style>
         body{
@@ -101,9 +102,18 @@
             <p>Home & Health</p>
         </div>
     </div>
-    <!-- <div id="under">
+    <main>
         <p>Under 399</p>
-    </div>
+        <div class="slider-container">
+
+            <img src="https://cdn1.iconfinder.com/data/icons/arrows-224/48/arrow-left-circle-512.png" id="slide-left" class="arrow" alt="">
+
+            <section id="slider" class="container"></section>
+    
+            <img src="https://cdn1.iconfinder.com/data/icons/nav-and-menu/64/arrow_next_go_navigation_user_interface_ui-512.png" id="slide-right" class="arrow" alt="">
+        </div>
+       
+    </main>
     <div id="upto">
         <p>UPTO 65% OFF</p>
     </div>
@@ -135,11 +145,11 @@
             <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/cold-and-fever.jpg?v=1" alt="Error">
             <p>Cold And Fever</p>
         </div>
-    </div> -->
+    </div> 
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script type="module" src="./wellnesh.js"></script>
+
 <script>
     const swiper = new Swiper('.swiper', {
 
@@ -160,3 +170,4 @@ navigation: {
 });
 </script>
 </html>
+<script type="module" src="wellnesh.js"></script>
