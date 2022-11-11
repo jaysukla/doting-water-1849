@@ -1,5 +1,9 @@
 
-<
+body{
+    font-family: lato;
+    margin: 0;
+    padding: 0;
+}
 #navbar{
     background-color: #011824;
     color:white;

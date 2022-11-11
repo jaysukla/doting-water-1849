@@ -34,12 +34,36 @@ const navbar=()=>{
             <p>All Products</p>
             <p>Previously Ordered Products</p>
           </div>
+
+    </div>
+ 
+    <div class="one"> <a href="/"><img src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg" alt=""> </a><div class="dropdown">
+        <button id="Wellness" class="dropbtn">Wellness</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
         </div>
-        <div>
-            <div class="dept">
-                <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/ordermedicinnew.svg"></div>
-                <p>Wellness</p>
+      </div></div>
+    
+    <div class="one"> <a href="/"><img src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg" alt=""></a>
+        <div class="dropdown">
+            <button class="dropbtn">Lab Test</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
             </div>
+          </div></div>
+   
+    <div class="one"> <a href="/"><img src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg" alt=""></a><div class="dropdown">
+        <button id="Beauty" class="dropbtn">Beauty</button>
+        <div class="dropdown-content">
+          <a href="#">Personal care</a>
+          <a href="#">Make-Up</a>
+          <a href="#">Skin Care</a>
+          <a href="#">Hair</a>
+
         </div>
         <div>
             <div  class="dept">
