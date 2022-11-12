@@ -7,7 +7,7 @@ body {
     background-color: #f6f6f7;
     font-family: 'Lato', sans-serif;
   }
-  #container {
+  #container  {
     width: 68%;
     display: flex;
     flex-wrap: wrap;
