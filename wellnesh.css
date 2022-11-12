@@ -1,7 +1,13 @@
-
+body{
+    font-family: lato;
+}
 main{
-    background-color: #f4f4f4;
-    padding: 4rem 0;
+    margin-top: 15px ;
+    background-color: white;
+    padding: 5px; 
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 .slider-container{
     max-width: 6000px;
@@ -12,7 +18,7 @@ main{
 }
 .arrow{
     width: 2rem;
-    margin: 0 1rem;
+    margin: 0 .5rem;
 }
 section{
     width: 100%;
@@ -33,12 +39,14 @@ section::-webkit-scrollbar{
     display: none;
 }
 section .thumbnail{
+    width: 250px;
+    height: 330px;
     flex:0 0 auto;
     object-fit: cover;
     cursor: pointer;
     margin: 5px;
-    border: 1px solid black;
-    border-radius: 3px;
+    border: .1px solid rgb(186, 186, 186);
+    border-radius: 10px;
     overflow: hidden;
     transform: scale(.95);
     transition: all .3s;
@@ -48,4 +56,261 @@ section .thumbnail{
     text-align: center;
     padding-bottom: 1rem;
     background-color: #fff;
+    padding: 10px;
+}
+.thumbnail .btn{
+    background-color: #24aeb1;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    
+}
+.thumbnail h4{
+    color: #f0528c;
+}
+
+
+/* -------------------------------------------------------------------------------------------- */
+#upto{
+    margin-top: 15px ;
+    background-color: white;
+    padding: 5px; 
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.slider-container1{
+    max-width: 6000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.arrow1{
+    width: 2rem;
+    margin: 0 .5rem;
+}
+section{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+section::-webkit-scrollbar{
+    height: 5px;
+    width: 2px;
+    border: 1px solid #d5d5d5;
+    background: #d5d5d5;
+    display: none;
+}
+section .thumbnail1{
+    width: 250px;
+    height: 330px;
+    flex:0 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+    border: .1px solid rgb(186, 186, 186);
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(.95);
+    transition: all .3s;
+
+}
+.thumbnail1{
+    text-align: center;
+    padding-bottom: 1rem;
+    background-color: #fff;
+    padding: 10px;
+}
+.thumbnail1 .btn{
+    background-color: #24aeb1;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    
+}
+.thumbnail1 h4{
+    color: #f0528c;
+}
+/* ---------------------------------------------------------------------------------- */
+
+#emami{
+    margin-top: 15px ;
+    background-color: white;
+    padding: 5px; 
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.slider-container2{
+    max-width: 6000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.arrow2{
+    width: 2rem;
+    margin: 0 .5rem;
+}
+section{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+section::-webkit-scrollbar{
+    height: 5px;
+    width: 2px;
+    border: 1px solid #d5d5d5;
+    background: #d5d5d5;
+    display: none;
+}
+section .thumbnail2{
+    width: 250px;
+    height: 330px;
+    flex:0 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+    border: .1px solid rgb(186, 186, 186);
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(.95);
+    transition: all .3s;
+
+}
+.thumbnail2{
+    text-align: center;
+    padding-bottom: 1rem;
+    background-color: #fff;
+    padding: 10px;
+}
+.thumbnail2 .btn{
+    background-color: #24aeb1;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    
+}
+.thumbnail2 h4{
+    color: #f0528c;
+}
+
+/* --------------------------------------------------------------------------- */
+
+#Aroma_Magic{
+    margin-top: 15px ;
+    background-color: white;
+    padding: 5px; 
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.slider-container3{
+    max-width: 6000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.arrow3{
+    width: 2rem;
+    margin: 0 .5rem;
+}
+section{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+section::-webkit-scrollbar{
+    height: 5px;
+    width: 2px;
+    border: 1px solid #d5d5d5;
+    background: #d5d5d5;
+    display: none;
+}
+section .thumbnail3{
+    width: 250px;
+    height: 330px;
+    flex:0 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+    border: .1px solid rgb(186, 186, 186);
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(.95);
+    transition: all .3s;
+
+}
+.thumbnail3{
+    text-align: center;
+    padding-bottom: 1rem;
+    background-color: #fff;
+    padding: 10px;
+}
+.thumbnail3 .btn{
+    background-color: #24aeb1;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    
+}
+.thumbnail3 h4{
+    color: #f0528c;
+}
+
+
+/* ------------------------------------------------------- */
+
+#health{
+    margin-left: 2%;
+}
+
+#concerns{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    gap: 15px;
+    margin:auto ;
+}
+#concerns div{
+    border-radius: 7px;
+    background-color: white;
+}
+
+#concerns div{
+    width: 100%;
+    border-radius: 7px;
+    /* margin-top: 40px; */
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
