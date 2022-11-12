@@ -1,4 +1,4 @@
-
+er
  
 
 
@@ -205,6 +205,8 @@ function slider2(){
       }
 
 
+
+          
                                                                 //   Top Brands End
 
 
@@ -339,6 +341,7 @@ localStorage.setItem("cart",JSON.stringify(arr))
 
 
 }
+
 
 
 
