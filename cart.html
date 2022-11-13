@@ -6,11 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+
+<style>
+#append{
+    width: 95%;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 20px;
+margin: auto;
+margin-top: 50px;
+}
+
+#append>div{
+    height: 350px;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#append>div>button{
+    margin-top: 15px;
+}
+
+
+#dilevry{
+    width: 30%;
+    margin: auto;
+    margin-top: 80px;
+}
+#dilevry>input{
+    width: 300px;
+    height: 35px;
+    border-radius: 4px;
+}
+#dilevry>button{
+    height: 35px;
+    background-color:coral;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+  
+}
+
+</style>
+
 </head>
 <body>
     <div id="navbar">
 
     </div>
 
+    <div id="append">
+
+    </div>
+
+
+    <div id="dilevry">
+
+
+        <input type="text" name="" id="address" placeholder="Enter Dilevry Address">
+
+        <button id="proceed_to_pay">PLACE Order</button>
+    
+    
+
+    </div>
+
 </body>
 </html>
+<script type="module" src="./cart.js"></script>

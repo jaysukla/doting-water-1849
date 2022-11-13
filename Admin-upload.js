@@ -1,10 +1,10 @@
 
 
-// import {navbar} from "./navbar.js"
+import {navbar ,gohome } from "./navbar.js"
 
-// document.querySelector("#navbar").innerHTML=navbar()
+document.querySelector("#navbar").innerHTML=navbar()
 
-
+gohome()
 
 
 //adding event listner to button 
@@ -99,6 +99,120 @@ headers:{
 
 console.log(res)
 
+
+}
+
+
+let Orders=JSON.parse(localStorage.getItem("OR"))
+
+//<div id="ord">
+
+{/* <div id="prod">
+<h2>Products</h2>
+
+    </div>
+
+<div id="price"> 
+<h2>Price</h2>
+
+
+</div>
+
+<div id="adds">
+<h2>Address</h2>
+
+</div>
+
+
+
+</div> */}
+show(Orders)
+
+function show(Orders){
+
+    Orders.forEach((el,i)=> {
+    
+        let ord=document.createElement("div")
+        ord.setAttribute("id","ord")
+        
+        let prod =document.createElement("div")
+        prod.setAttribute("id","prod")
+        let Products= document.createElement("h2")
+        Products.innerText="Products"
+        prod.append(Products)
+        el.names.forEach(el => {
+        
+            let h4=document.createElement("h4")
+        h4.innerText=el
+        h4.style.color="grey"
+        prod.append(h4)
+        
+        })
+        
+        let price=document.createElement("div")
+        price.setAttribute("id","price")
+        let ph=document.createElement("h2")
+        ph.innerText="Price"
+        price.append(ph)
+        el.prices.forEach(el=>{
+        let h4= document.createElement("h4")
+        h4.innerText=el
+        h4.style.color="grey"
+        price.append(h4)
+        
+        })
+        
+        let adds=document.createElement("div")
+        adds.setAttribute("id","adds")
+        let ah=document.createElement("h2")
+        ah.innerText="Address"
+        adds.append(ah)
+        let ad=document.createElement("h4")
+        ad.innerText=el.adds
+        ad.style.color="grey"
+        adds.append(ad)
+        
+        let total= document.createElement("div")
+        total.setAttribute("id","total")
+        
+        let ht= document.createElement("h2")
+        ht.innerText="Total Price "
+        total.append(ht)
+        let to=document.createElement("h4")
+        to.innerText=el.total
+        to.style.color="red"
+        total.append(to)
+        
+        
+        
+        let btn=document.createElement("button")
+        btn.innerText="Remove"
+        btn.addEventListener("click",function(){
+            vanish(el,i)
+        })
+        
+        
+        ord.append(prod,price,adds,total ,btn)
+        document.querySelector("#od_detail").append(ord,)
+        
+        
+        });
+        
+        
+
+
+
+
+}
+
+
+
+function vanish(el,i){
+
+Orders.splice(i,1)
+
+localStorage.setItem("OR",JSON.stringify(Orders))
+location.reload()
 
 }
 

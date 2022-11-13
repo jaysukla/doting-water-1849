@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="admin-upload-style.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="admin-upload-style.css">
+   
 </head>
 <body>
 
@@ -16,51 +17,85 @@
 
 </div>
 
-
-    <div class="main">
-        <div id="add_product">
-            <h3>Add Product</h3>
-            <input type="text" id="id" placeholder="Enter Product Id ">
-            <input type="text" id="name" placeholder="Enter Product Name">
-            <input type="url" id="image" placeholder="Enter Product-Image Url">
-            <input type="text" id="description" placeholder="Add Product Descreption">
-            <select id="category">
-                <option value="Wellness">Wellness</option>
-                <option value="Limited">Limited</option>
-                <option value="Ayurveda">Ayurveda</option>
-                  </select>
-            <input type="number" id="price" placeholder="Enter Product Price">
-            <button id="add_product_btn">Add product</button>
-        </div>
-        <div>
-            <img style="box-shadow: 10px 10px 20px -3px #32aeb1;" src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png" alt="backgroundimg">
-        </div>
-        <!-- Delete the product  -->
-        <div id="bin">
-            <h3>Delete Product</h3>
-                <input  type="text" name="" id="Delete_id" placeholder="Entre product id" >
-                <select id="type">
-                    <option value="Wellness">Wellness</option>
-                    <option value="Limited">Limited</option>
-                    <option value="Ayurveda">Ayurveda</option>
-                      </select> 
-                <button id="remove"> Remove</button>
-        
-        <!-- update the price  -->
-            <h3>Update Price</h3>
-            <input  type="text" name="" id="update_id" placeholder="Entre product id" >
-            <select id="update_in">
-                <option value="Wellness">Wellness</option>
-                <option value="Limited">Limited</option>
-                <option value="Ayurveda">Ayurveda</option>
-                </select> 
-            <input type=number name="" placeholder="Add new price" id="new_price">
-
-            <button id="update_btn">Update</button>
-        </div>
+<div class="main">
+    <div id="add_product">
+        <h3>Add Product</h3>
+        <input type="text" id="id" placeholder="Enter Product Id ">
+        <input type="text" id="name" placeholder="Enter Product Name">
+        <input type="url" id="image" placeholder="Enter Product-Image Url">
+        <input type="text" id="description" placeholder="Add Product Descreption">
+        <select id="category">
+            <option value="Wellness">Wellness</option>
+            <option value="Limited">Limited</option>
+            <option value="Ayurveda">Ayurveda</option>
+              </select>
+        <input type="number" id="price" placeholder="Enter Product Price">
+        <button id="add_product_btn">Add product</button>
     </div>
-    <hr>
-    <!--Add footer here-->
+    <div>
+        <img style="box-shadow: 10px 10px 20px -3px #32aeb1;" src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png" alt="backgroundimg">
+    </div>
+    <!-- Delete the product  -->
+    <div id="bin">
+        <h3>Delete Product</h3>
+            <input  type="text" name="" id="Delete_id" placeholder="Entre product id" >
+            <select id="type">
+                <option value="Wellness">Wellness</option>
+                <option value="Limited">Limited</option>
+                <option value="Ayurveda">Ayurveda</option>
+                  </select> 
+            <button id="remove"> Remove</button>
+    
+    <!-- update the price  -->
+        <h3>Update Price</h3>
+        <input  type="text" name="" id="update_id" placeholder="Entre product id" >
+        <select id="update_in">
+            <option value="Wellness">Wellness</option>
+            <option value="Limited">Limited</option>
+            <option value="Ayurveda">Ayurveda</option>
+            </select> 
+        <input type=number name="" placeholder="Add new price" id="new_price">
+
+        <button id="update_btn">Update</button>
+    </div>
+</div>
+<hr>
+   
+
+<!-- Orders Details   -->
+
+<div id="od_detail">
+<h4 style="margin-left: 46%">Order Details</h4>
+
+<!-- <div id="ord">
+
+    <div id="prod">
+<h2>Products</h2>
+
+    </div>
+
+<div id="price"> 
+<h2>Price</h2>
+
+
+</div>
+
+<div id="adds">
+<h2>Address</h2>
+
+</div>
+
+
+
+</div> -->
+
+
+
+
+
+</div>
+
+
 </body>
 <script type="module" src="Admin-upload.js"></script>
 

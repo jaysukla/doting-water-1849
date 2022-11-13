@@ -1,8 +1,13 @@
-//import navbar
-import {navbar} from './components/navbar.js'
+import {navbar ,gohome } from "./navbar.js"
 
-let navbar_div=document.getElementById("navbar");
-navbar_div.innerHTML=navbar();
+document.querySelector("#navbar").innerHTML=navbar()
+
+gohome()
+
+import {footer} from "./footer.js"
+
+document.querySelector("#footer").innerHTML=footer()
+
  
 
     // Appending data of products via Fetch call from homepage.js(line33)

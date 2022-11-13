@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
 
     <style>
       body {
@@ -12,8 +13,8 @@
         justify-content: center;
       }
       #container {
-        /* width: 65%; */
-        border: 1px solid black;
+    
+  
         display: flex;
         margin: auto;
       }
@@ -23,14 +24,17 @@
         font-size: 18px;
         margin: 10px auto;
       }
-      input::-webkit-outer-spin-button,
-      input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-      input[type="number"] {
-        -moz-appearance: textfield;
-      }
+      
+     .logo{
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      margin-left: 20px;
+      margin-top: 80px;
+     }
+
+     #fields{
+      margin-left: 160px;
+      margin-top: 160px;
+     }
 
       .errMsg {
         color: red;
@@ -64,7 +68,7 @@
         />
         <div id="error"></div>
 
-        <button id="otpBtn">Use OTP</button>
+        <button id="otpBtn">Get OTP</button>
       </div>
       <div id="alt"
       style="display: none;"

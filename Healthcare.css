@@ -1,10 +1,10 @@
-*{
+ /**{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;
     
-}
+}*/
 a{
     text-decoration: none;
     color:black
@@ -24,12 +24,12 @@ a{
   padding: 20px 0;
 
     text-align: center;
-}
+} 
 .blog p{
  color:rgb(133, 132, 132);
   padding: 10px 0px;
   font-size: 15px;
-}
+} 
 .bar a{
   font-size: 13px;
 }
@@ -190,4 +190,4 @@ a{
     }
     .title2{
       padding-left: 50px;
-    }
+    } 
