@@ -5,45 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup</title>
-    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="signup.css">
 
-    <style>
-      body {
-        text-align: center;
-        justify-content: center;
-      }
-      #container {
     
-  
-        display: flex;
-        margin: auto;
-      }
-      input {
-        width: 80%;
-        padding: 20px;
-        font-size: 18px;
-        margin: 10px auto;
-      }
-      
-     .logo{
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-      margin-left: 20px;
-      margin-top: 80px;
-     }
-
-     #fields{
-      margin-left: 160px;
-      margin-top: 160px;
-     }
-
-      .errMsg {
-        color: red;
-        font-size: 14px;
-        font-style: italic;
-        margin-left: -225px;
-        margin-top: -10px;
-      }
-    </style>
   </head>
   <body>
     <h2 id="showOTP"></h2>
@@ -56,105 +20,118 @@
         />
       </div>
 
-      <div id="fields">
-        <h2>Sign in/ Sign up</h2>
-        <p>Sign up or Sign in to access your orders, special offers, health tips and more!</p>
-        <input
-          type="number"
-          minlength="10"
-          maxlength="10"
-          placeholder="Enter your mobile number"
-          id="numVal"
-        />
-        <div id="error"></div>
+      <div id="fields" class="similar" >
+         <div>
 
-        <button id="otpBtn">Get OTP</button>
-      </div>
-      <div id="alt"
-      style="display: none;"
-       >
-        <form action="./index.html">
+           
+           <h2>Sign in/ Sign up</h2>
+           <p>Sign up or Sign in to access your orders, special offers, health tips and more!</p>
+           <input
+           type="number"
+           minlength="10"
+           maxlength="10"
+           placeholder="Enter your mobile number"
+           id="numVal"
+           />
+           <div id="error"></div>
+           
+           <button id="otpBtn">Use OTP</button>
+          </div>
+        </div>
+       
 
-          <label >EMAIL ID</label>
-          <input type="email" id="inpMail" placeholder="Enter your Email Id" required>
-          <label >First Name</label>
-          <input type="text" id="inpFN" placeholder="Your First Name" required>
-          <label >Last Name</label>
-          <input type="text" id="inpLN" placeholder="Your Last Name"required>
-          <h3>VERIFYING NUMBER</h3>
-          <p id="showNum"></p>
-          <input type="number" minlength="4" maxlength="4" id="inpOtp" placeholder="Enter OTP" required  >
-          <button type="submit" class="verify">Verify</button>
-        </form>
-      </div>
-      <div id="login"
-      style="display: none;"
-       >
-        <form action="./index.html">
+      <div   id="alt"    class="similar"   style="display: none;"       >
+<div >
+  
+  
+  <form action="./index.html">
+    <h2>Create Account</h2>
+    <label >EMAIL ID</label>
+    <input type="email" id="inpMail" placeholder="Enter your Email Id" required>
+    <label >First Name</label>
+           <input type="text" id="inpFN" placeholder="Your First Name" required>
+           <label >Last Name</label>
+           <input type="text" id="inpLN" placeholder="Your Last Name"required>
+           <h3>VERIFYING NUMBER</h3>
+           <p id="showNum"></p>
+           <input type="number" minlength="4" maxlength="4" id="inpOtp" placeholder="Enter OTP" required  >
+           <button type="submit" class="verify">Verify</button>
+          </form>
+          
+        </div>
+        </div>
+      <div  id="login"  class="similar"     style="display: none;"       >
 
-          <h3>VERIFYING NUMBER</h3>
-          <p id="showNumber"></p>
-          <input type="number" minlength="4" maxlength="4" class="inpOtp" placeholder="Enter OTP" required  >
-          <button type="submit" class="verify">Verify</button>
-        </form>
-      </div>
+       <div>
+
+         <form action="./index.html">
+           
+           <h3>VERIFYING NUMBER</h3>
+           <p id="showNumber"></p>
+           <input type="number" minlength="4" maxlength="4" class="inpOtp" placeholder="Enter OTP" required  >
+           <button type="submit" class="verify">Verify</button>
+          </form>
+          
+        </div>
+        </div>
     </div>
   </body>
 
   <script>
            
     let data = JSON.parse(localStorage.getItem("creds")) || [];
-    // console.log(data)
-// if(data==''){
-//   console.log("EMpty")
-// }   
-// else{
-//   console.log("NOt")
-// }
-
+    
+   
     let errMsg = document.getElementById("error");
     let otpBtn = document.getElementById("otpBtn");
-
+ 
     otpBtn.onclick = () => {
-        // console.log("OK")
+      // console.log("OK")
       let numValue = document.getElementById("numVal").value;
+      // localStorage.setItem("numb",numValue);
       // console.log(numValue)
+      
       if(data==''){
-      console.log("empty")
-      if (   numValue != "" && numValue.length == 10 ) {
-          fields();
-          // getOTP();
-        } else {
-          let p = document.createElement("p");
-          p.innerText = "Please enter a valid number";
-          p.classList.add("errMsg");
-          errMsg.append(p);
-          // ("please enter no.");
-        }
-    }
-    else{
 
-      data.forEach((el)=>{
-        
-        if(el.number==numValue){
-          // console.log(el.number)
-          login();
-        }
-       else if (   numValue != "" && numValue.length == 10 ) {
+        if (   numValue != "" && numValue.length == 10 ) {
           fields();
           // getOTP();
         } else {
+
           let p = document.createElement("p");
+          
           p.innerText = "Please enter a valid number";
           p.classList.add("errMsg");
           errMsg.append(p);
-          // ("please enter no.");
+
         }
-        
-      })
     }
+    
+    else if(data!=''){
+
+      
+      if ( numValue != "" && numValue.length == 10 ) {
+        fields();
+        
+
+        } 
+        else {
+          
+          let p = document.createElement("p");
+          p.innerText = "Please enter a valid number";
+          
+          p.classList.add("errMsg");
+          errMsg.append(p);
+          
+          
+        }
+        // })
+        
+      }
+      
+      
     };
-
+    
     let appendOtp = document.getElementById("showOTP");
     function getOTP() {
       let otp = Math.floor(Math.random() * (9999 - 1000) + 1000);
@@ -164,7 +141,7 @@
     }
     
     function login(){
-// alert("ok")
+
       let f_div = document.getElementById("fields");
       let alt_div = document.getElementById("login");
       f_div.style.display='none';
@@ -172,13 +149,13 @@
       
       let numValue = document.getElementById("numVal").value;
       let showNum = document.getElementById("showNumber");
-      showNum.innerText='We have sent 4 digit OTP on +91'+ numValue;
-      // console.log(numValue,showNum)
+      showNum.innerText='We have sent 4 digit OTP on +91 - '+ numValue;
+
       
       setTimeout(() => {
         
         getOTP();
-      }, 600);
+      }, 500);
     }
 
     function fields() {
@@ -189,13 +166,13 @@
         profile();
         let numValue = document.getElementById("numVal").value;
         let showNum = document.getElementById("showNum");
-        showNum.innerText='We have sent 4 digit OTP on '+ numValue;
+        showNum.innerText='We have sent 4 digit OTP on +91 - '+ numValue;
         // let data = JSON.parse(localStorage.getItem("creds")) || [];
         // console.log(data["number"]);
         setTimeout(() => {
           
           getOTP();
-        }, 600);
+        }, 500);
         
     }
     function profile(){
@@ -216,6 +193,7 @@
 
         data.push(obj);
         localStorage.setItem("creds",JSON.stringify(data));
+        localStorage.setItem("User",fnVal);
       }
       // console.log(obj)
     }
@@ -229,7 +207,7 @@
 
             profile()
             // alert("ok")
-            // window.open("./index.html");
+            // window.open(".");
           }
         }
      

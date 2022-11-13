@@ -293,3 +293,10 @@ topbrands(x,y);
 
                                                     //   Top Brands End
 
+// display username on homepage---- changes by Shubhainder on 12-11-2022
+let data = localStorage.getItem("User") ;
+let userName = document.querySelector(".userName");
+if(data!=''){
+userName.innerText= data;
+}
+//----------------------------------
