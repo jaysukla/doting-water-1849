@@ -19,7 +19,7 @@ return `       <div>
         </div>
         <div>
             <i class="fa-solid fa-id-card"></i>
-            <a href="./SingUp.html">Sign in/Sign up</a>
+            <a href="./SingUp.html" class="userName">Sign in/Sign up</a>
         </div>
     </div>
  </div>
@@ -75,6 +75,7 @@ return `       <div>
     </div>
 </div>`
 
+
 }
 
 
@@ -88,7 +89,7 @@ function gohome(){
 
 }
 
-
+ 
 
 
 

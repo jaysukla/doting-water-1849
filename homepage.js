@@ -293,10 +293,14 @@ topbrands(x,y);
 
                                                     //   Top Brands End
 
-// display username on homepage---- changes by Shubhainder on 12-11-2022
-let data = localStorage.getItem("User") ;
+// display username on homepage----  
+let data = localStorage.getItem("User") ||[];
 let userName = document.querySelector(".userName");
+userName.innerText='Sign in/Sign up';
 if(data!=''){
 userName.innerText= data;
+}
+else{
+  userName.innerText= 'Sign in/Sign up';
 }
 //----------------------------------
