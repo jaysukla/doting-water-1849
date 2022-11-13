@@ -15,7 +15,25 @@ body{
   -moz-appearance: textfield;
 }
 
- 
+ #top{
+    /* margin: auto; */
+    margin: 5% 3%;
+    display: flex;
+    width: 97%;
+
+ }
+ #right{
+
+     width: 70%;
+     margin: 0 1%;
+ }
+ #labForm{
+    display: grid;
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    padding: 15px;
+ }
 
 .labitems{
    margin: 8px 12px;
@@ -30,6 +48,11 @@ body{
     margin: 10px;
     padding: 10px;
     
+}
+#packages>h1,#packages>p{
+     margin: 10px 30px;
+     padding: 10px;
+
  }
  .labitems>p{
     font-size: 13px;
@@ -122,8 +145,65 @@ body{
 
 }
 
-
+del,h2{
+    width: fit-content;
+    height: fit-content;
+     
+}
+h2{
+margin: -8px 0 10px 5px;
+color: red;
+}
 .price{
     display: flex;
     flex-direction: row;
+    width: 25px;
 }
+.bookPack{
+    width: 130px;
+    padding: 8px;
+    /* margin: 5px; */
+    background-color: white;
+    color: #24aeb1;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#bookBtn{
+    width: 100%;
+    padding: 8px;
+    /* margin: 5px; */
+    background-color: #24aeb1;
+    color: white;
+    border: 0;
+    font-size: 18px;
+     border-radius: 5px;
+     margin-top: 10px;
+}
+#labForm>label{
+color: #24aeb1;
+margin-top: 10px;
+}
+#labForm>input{
+    
+border: 0;
+border-bottom: 1px solid rgba(21, 27, 57, .1);
+}
+#labForm>select{
+    width: 100%;
+    padding: 3px;
+    border: 0;
+    border-bottom: 1px solid rgba(21, 27, 57, .1);
+    background-color: white;
+    color: #555555;
+    margin: 5px 0px;
+    margin-bottom: 8px;
+ }
+ option{
+    color: #555555;
+ }
+ button{
+    cursor: pointer;
+ }
+  

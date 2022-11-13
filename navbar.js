@@ -43,8 +43,8 @@ return `       <div>
     <div>
         <div  class="dept">
             <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/Wellnessnew.svg"></div>
-            <p>Lab Tests</p>
-        </div>
+            <a href="./labTest.html" >Lab Tests </a>
+        </div> 
     </div>
     <div class="right_menu">
         <div  class="dept">
