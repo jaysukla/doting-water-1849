@@ -50,6 +50,7 @@
         }
         .right_menu:hover .dropdown_menu{
             display: block;
+                z-index:3;
 
         }
         .dropdown_menu>p:hover{
